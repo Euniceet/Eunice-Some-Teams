@@ -17,22 +17,22 @@ require 'data.php';
 <body>
   <?php require 'header.php'; ?>
   <h1>Some Teams</h1>
-  <ul>
+
+  <ul class="team-grid">
     <?php foreach ($teams as $teamName => $team): ?>
-      <li>
-        <a href="<?= $team['url'] ?>" target="_blank"><?= $teamName ?></a><br>
-        <?= $team['city'] ?><br>
-        <?= $team['league'] ?><br>
-        <?= $team['uefa-coefficient-ranking'] ?><br>
-        <?= $team['league-position'] ?><br>
+      <li class="team-card">
+        <a href="<?= $team['url'] ?>" target="_blank">
+          <?= $teamName ?>
+        </a>
+        <p><?= $team['city'] ?></p>
+        <p><?= $team['league'] ?></p>
+        <p>UEFA ranking: <?= $team['uefa-coefficient-ranking'] ?></p>
+        <p>League position: <?= $team['league-position'] ?></p>
         <img src="<?= $team['logo_uefa'] ?>" alt="<?= $teamName ?>" width="100">
-
-
       </li>
-
-
     <?php endforeach; ?>
   </ul>
+
 </body>
 
 </html>

@@ -31,3 +31,34 @@ img {
   width: 100px;
   height: auto;
 }
+
+.team-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.team-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.team-card img {
+  display: block;
+  width: 100px;
+  height: auto;
+}
+@media (min-width: 600px) {
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1000px) {
+  .team-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
