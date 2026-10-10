@@ -11,6 +11,7 @@ require 'data.php';
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Some Teams</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -19,12 +20,12 @@ require 'data.php';
   <ul>
     <?php foreach ($teams as $teamName => $team): ?>
       <li>
-        <a href="<?= $team['url'] ?>?>" target="_blank"><?= $teamName ?></a><br>
+        <a href="<?= $team['url'] ?>" target="_blank"><?= $teamName ?></a><br>
         <?= $team['city'] ?><br>
         <?= $team['league'] ?><br>
         <?= $team['uefa-coefficient-ranking'] ?><br>
         <?= $team['league-position'] ?><br>
-        <img src="<?= $team['logo'] ?>?>" alt="<?= $teamName ?>?>" width="100">
+        <img src="<?= $team['logo_uefa'] ?>" alt="<?= $teamName ?>" width="100">
 
 
       </li>
