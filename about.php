@@ -1,17 +1,18 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About me</title>
+    <title>About Me</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <?php require 'header.php'; ?>
 
     <h1>About Me</h1>
-    <p>My name is Eunice Tumwesigye, A web developeer student at yrgo.</p>
+    <p>My name is Eunice Tumwesigye. I am a webb developer student at Yrgo.</p>
 
 </body>
 
