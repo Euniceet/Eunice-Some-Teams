@@ -15,6 +15,7 @@ A PHP website displaying information about women's football teams.
 - PHP
 - HTML
 - Git and GitHub
+- Css
 
 ## Live Website
 
